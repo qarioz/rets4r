@@ -19,3 +19,42 @@ Gem::Specification.new do |s|
   s.rubygems_version = "2.1.5"
   s.summary = "RETS4R is a native Ruby interface to the RETS (Real Estate Transaction Standard)"
 
+  if s.respond_to? :specification_version then
+    s.specification_version = 4
+
+    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<nokogiri>, [">= 1.3.2"])
+      s.add_runtime_dependency(%q<thor>, [">= 0"])
+      s.add_development_dependency(%q<aruba>, [">= 0"])
+      s.add_development_dependency(%q<activesupport>, [">= 0"])
+      s.add_development_dependency(%q<cucumber>, [">= 0"])
+      s.add_development_dependency(%q<i18n>, [">= 0"])
+      s.add_development_dependency(%q<mocha>, [">= 0"])
+      s.add_development_dependency(%q<rake>, [">= 0"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
+      s.add_development_dependency(%q<shoulda>, [">= 0"])
+    else
+      s.add_dependency(%q<nokogiri>, [">= 1.3.2"])
+      s.add_dependency(%q<thor>, [">= 0"])
+      s.add_dependency(%q<aruba>, [">= 0"])
+      s.add_dependency(%q<activesupport>, [">= 0"])
+      s.add_dependency(%q<cucumber>, [">= 0"])
+      s.add_dependency(%q<i18n>, [">= 0"])
+      s.add_dependency(%q<mocha>, [">= 0"])
+      s.add_dependency(%q<rake>, [">= 0"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
+      s.add_dependency(%q<shoulda>, [">= 0"])
+    end
+  else
+    s.add_dependency(%q<nokogiri>, [">= 1.3.2"])
+    s.add_dependency(%q<thor>, [">= 0"])
+    s.add_dependency(%q<aruba>, [">= 0"])
+    s.add_dependency(%q<activesupport>, [">= 0"])
+    s.add_dependency(%q<cucumber>, [">= 0"])
+    s.add_dependency(%q<i18n>, [">= 0"])
+    s.add_dependency(%q<mocha>, [">= 0"])
+    s.add_dependency(%q<rake>, [">= 0"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
+    s.add_dependency(%q<shoulda>, [">= 0"])
+  end
+end
